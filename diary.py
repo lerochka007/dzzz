@@ -4,13 +4,13 @@ put = r'C:\Users\Asus\Desktop\python\diary.txt'
 
 # создаём файл и пишем первые три строки
 with open(put, 'w', encoding='utf-8') as f:
-    f.write('Сегодня мы работали с файлами Python.')
-    f.write('Научились сохранять текст.')
-    f.write('Узнали, как читать данные обратно.')
+    f.write('Сегодня мы работали с файлами Python.'\n)
+    f.write('Научились сохранять текст.'\n)
+    f.write('Узнали, как читать данные обратно.'\n)
 
 # дописываем четвёртую строку
 with open(put, 'a', encoding='utf-8') as f:
-    f.write('Следующее занятие – CSV и JSON')
+    f.write('Следующее занятие – CSV и JSON'\n)
 
 # читаем файл
 with open(put, 'r', encoding='utf-8') as f:
